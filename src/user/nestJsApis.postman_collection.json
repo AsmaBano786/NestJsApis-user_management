@@ -1,0 +1,204 @@
+{
+	"info": {
+		"_postman_id": "55cd287b-68bb-467e-8385-8d8ba028eca9",
+		"name": "nestJsApis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27707552",
+		"_collection_link": "https://lively-firefly-529353.postman.co/workspace/My-Workspace~3bedc7e4-c94d-45e2-8e71-0ff3e7a9a8ff/collection/27707552-55cd287b-68bb-467e-8385-8d8ba028eca9?action=share&source=collection_link&creator=27707552"
+	},
+	"item": [
+		{
+			"name": "add-user",
+			"item": [
+				{
+					"name": "http://localhost:3000/users",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"asu1\",\r\n  \"email\": \"asu124531@example.com\",\r\n  \"phoneNumber\": \"123-456-789123123\",\r\n  \"address\": \"123 Main St, Anytown, USA\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "getAllUser",
+			"item": [
+				{
+					"name": "http://localhost:3000/users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "getByIdUser",
+			"item": [
+				{
+					"name": "http://localhost:3000/users/1719147795962",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users/1719199093261",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"1719199093261"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "delete",
+			"item": [
+				{
+					"name": "http://localhost:3000/users/1719147795962",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users/1719199136019",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"1719199136019"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "updateUser",
+			"item": [
+				{
+					"name": "http://localhost:3000/users/1719147795962",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Asma Bano\",\r\n  \"email\": \"asu@example.com\",\r\n  \"phoneNumber\": \"123-456-7890\",\r\n  \"address\": \"123 Main St, Anytown, USA\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/1719199093261",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"1719199093261"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "download",
+			"item": [
+				{
+					"name": "http://localhost:3000/users/pdf/1719147751967",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/pdf/retrieve/1719199093261",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"pdf",
+								"retrieve",
+								"1719199093261"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "generate",
+			"item": [
+				{
+					"name": "http://localhost:3000/pdf/generate/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/pdf/generate/1719199093261",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"pdf",
+								"generate",
+								"1719199093261"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
