@@ -32,7 +32,9 @@ export class PdfController {
         'Content-Disposition': `attachment; filename=${filename}`,
       });
 
-      res.send(pdfBuffer);
+      // res.send(pdfBuffer);
+      res.status(200).json({ success:true,error:false,message: 'Pdf generated successfully!' });
+
     } catch (error) {
       console.error('Error generating PDF:', error);
       res.status(500).json({ message: 'Internal server error' });
